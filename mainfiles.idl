@@ -1,0 +1,10 @@
+module mainfiles{
+    interface Hangman {
+        boolean start(in string name);
+        string guessedWord(in string name);
+        short play(in string name, in char guess);
+        boolean inPlay(in string name);
+        oneway void shutdown();
+        short length(in string name);
+    };
+};
