@@ -1,0 +1,8 @@
+
+Steps for installing, compiling and running python client:
+    1) the python must be Python 2.7 version
+    2) download the omniORB project for windows
+    3) cd to the root path of the project
+    4) make the idl file for interfaces, omniidl -bpython example_echo.idl
+    5) boot the java server
+    6) run the main.py with this command:[ python main.py ]
