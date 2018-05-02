@@ -6,3 +6,13 @@ Steps for installing, compiling and running python client:
     4) make the idl file for interfaces, omniidl -bpython example_echo.idl
     5) boot the java server
     6) run the main.py with this command:[ python main.py ]
+
+TAKE NOTE:
+    if the server is in another machine you can easily change the
+    ip address within the code. example for ip 192.168.0.1 :
+
+    change from
+    sys.argv.extend(("-ORBInitRef", "NameService=corbaname::localhost:1050"))
+
+    to
+    sys.argv.extend(("-ORBInitRef", "NameService=corbaname::192.168.0.1:1050"))
