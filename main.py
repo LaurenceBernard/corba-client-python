@@ -6,7 +6,7 @@ import CosNaming
 import mainfiles
 
 # Initialise the ORB
-sys.argv.extend(("-ORBInitRef", "NameService=corbaname::localhost"))
+sys.argv.extend(("-ORBInitRef", "NameService=corbaname::localhost:1050"))
 orb = CORBA.ORB_init(sys.argv, CORBA.ORB_ID)
 
 # Obtain a reference to the root naming context
